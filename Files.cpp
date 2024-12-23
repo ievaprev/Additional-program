@@ -13,12 +13,16 @@ void readFile(string& fileName, map<string, Info>& words) {
 		}
 
 		string line;
+		string file = "domains.txt";
+		set<string> urlCode = URLCode(file); 
 
 		int count = 1;
 
 		while (getline(inFile, line)) {
 			
-			findURL(line);
+			string tempLine = line;
+			findURL(tempLine, urlCode);  
+	 
 			string modifiedLine = textCleaning(line);
 			wordCount(modifiedLine, words, count);
 
@@ -64,5 +68,4 @@ void outputFile(const string& fileName, map<string, Info>& words) {
 	outfile << output.str();
 	outfile.flush();
 	outfile.close();
-
 }
