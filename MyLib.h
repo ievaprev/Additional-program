@@ -8,7 +8,6 @@
 #include <algorithm>
 #include <locale>
 #include <set>
-#include <regex>
 
 using std::cout;
 using std::endl;
@@ -30,6 +29,3 @@ using std::find;
 using std::transform;
 using std::locale;
 using std::set;
-using std::regex;
-using std::smatch;
-using std::regex_search;
