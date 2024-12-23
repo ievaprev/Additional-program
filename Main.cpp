@@ -3,6 +3,7 @@
 
 int main()
 {
+    locale::global(std::locale("lt_LT.UTF-8"));
     string fileName;
     map<string, Info> wordMap;
 
@@ -11,6 +12,4 @@ int main()
 
     readFile(fileName, wordMap);
     outputFile("output.txt", wordMap);
-
 }
-
