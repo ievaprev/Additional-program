@@ -20,7 +20,7 @@
 # Programos įgyventinimo logika
 
 * Pirmiausia nuskaitomas tekstas iš .txt failo. 
-* Naudojama ```findUrl``` funkcija, kuri remiasi Regex, kad išrinktu visus tekste esančius URL ir juos išvestų į terminalą.
+* Naudojama ```findUrl``` funkcija, kuri remiasi iš Domain.txt sudarytą set, kad išrinktu visus tekste esančius URL ir juos išvestų į terminalą.
 * Pašalinami visi skirybos ženklai ir visos raidės paverčiamos mažosiomis naudojant ```textCleaning``` funkcija.
 * Skaičiuojami visi pasikartojantys žodžiai naudojant asociatyvų konteinerį **map**.
     * Kiekvienas Map - Key yra iš teksto išrinktas pasikartojantis žodis
